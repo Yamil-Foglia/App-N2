@@ -1,0 +1,50 @@
+<ion-header>
+	<ion-toolbar class="background-color">
+		<ion-title>
+			<h1 class="mb-1 ta-c">Bienvenido</h1>
+		</ion-title>
+	</ion-toolbar>
+</ion-header>
+<ion-content class="background">
+       
+    <section class="full-width" style="height: 100%;">
+        <ion-button *ngIf = "colors" class="bt-stile" color="danger" expand="full" (click)="playAudio(1)">{{nameOne}}</ion-button>
+        <ion-button *ngIf = "animals" class="bt-stile botonimagen" [style.background-image]="'url(' + cow + ')'" expand="full" (click)="playAudio(1)">{{nameOne}}</ion-button>
+        <ion-button *ngIf = "numbers" class="bt-stile botonimagen" [style.background-image]="'url(' + one + ')'" expand="full" (click)="playAudio(1)">{{nameOne}}</ion-button>
+        
+        <ion-button *ngIf = "colors" class="bt-stile" color="primary" expand="full" (click)="playAudio(2)">{{nameTwo}}</ion-button>
+        <ion-button *ngIf = "animals" class="bt-stile botonimagen" [style.background-image]="'url(' + chicken + ')'" expand="full" (click)="playAudio(2)">{{nameTwo}}</ion-button>
+        <ion-button *ngIf = "numbers" class="bt-stile botonimagen" [style.background-image]="'url(' + two + ')'" expand="full" (click)="playAudio(2)">{{nameTwo}}</ion-button>
+
+        <ion-button *ngIf = "colors" class="bt-stile" color="warning" expand="full" (click)="playAudio(3)">{{nameThree}}</ion-button>
+        <ion-button *ngIf = "animals" class="bt-stile botonimagen" [style.background-image]="'url(' + pork + ')'" expand="full" (click)="playAudio(3)">{{nameThree}}</ion-button>
+        <ion-button *ngIf = "numbers" class="bt-stile botonimagen" [style.background-image]="'url(' + three + ')'" expand="full" (click)="playAudio(3)">{{nameThree}}</ion-button>
+
+        <ion-button *ngIf = "colors" class="bt-stile" color="success" expand="full" (click)="playAudio(4)">{{nameFour}}</ion-button>
+        <ion-button *ngIf = "animals" class="bt-stile botonimagen" [style.background-image]="'url(' + horse + ')'" expand="full" (click)="playAudio(4)">{{nameFour}}</ion-button>
+        <ion-button *ngIf = "numbers" class="bt-stile botonimagen" [style.background-image]="'url(' + four + ')'" expand="full" (click)="playAudio(4)">{{nameFour}}</ion-button>
+        
+        <ion-button *ngIf = "colors" class="bt-stile" color="dark" expand="full" (click)="playAudio(5)">{{nameFive}}</ion-button>
+        <ion-button *ngIf = "animals" class="bt-stile botonimagen" [style.background-image]="'url(' + bull + ')'" expand="full" (click)="playAudio(5)">{{nameFive}}</ion-button>
+        <ion-button *ngIf = "numbers" class="bt-stile botonimagen" [style.background-image]="'url(' + five + ')'" expand="full" (click)="playAudio(5)">{{nameFive}}</ion-button>
+        
+    </section>
+
+    
+    <ion-fab vertical="bottom" horizontal="end">
+        <ion-fab-button color="yamil">Idioma</ion-fab-button>
+        <ion-fab-list side="top">
+            <ion-fab-button class="background-buttom-top" (click)="btmSpanish()"><img  src="assets/españa.png"></ion-fab-button>
+            <ion-fab-button class="background-buttom-top" (click)="btmPortuguese()"><img  src="assets/Portugal.png"></ion-fab-button>
+            <ion-fab-button class="background-buttom-top" (click)="btmEnglish()"><img  src="assets/inlaterra.png"></ion-fab-button>
+        </ion-fab-list>
+    </ion-fab>
+    <ion-fab vertical="bottom" horizontal="start">
+        <ion-fab-button color="yamil">Tema</ion-fab-button>
+        <ion-fab-list side="top">
+            <ion-fab-button class="background-buttom-top" (click)="btmTopic(1)"><img  src="assets/numeros.jpg"></ion-fab-button>
+            <ion-fab-button class="background-buttom-top" (click)="btmTopic(2)"><img  src="assets/colores.jpg"></ion-fab-button>
+            <ion-fab-button class="background-buttom-top" (click)="btmTopic(3)"><img  src="assets/animales.jpg"></ion-fab-button>
+        </ion-fab-list>
+      </ion-fab>
+</ion-content>
