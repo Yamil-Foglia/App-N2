@@ -21,17 +21,17 @@ export class HomePage {
 	public animals: boolean;
 	public numbers: boolean;
 
-	public cow: string = "/assets/vaca.jpg";
-	public chicken: string = "/assets/chicken.png";
-	public pork: string = "/assets/pork.jpg";
-	public horse: string = "/assets/horse.jpg";
-	public bull: string = "/assets/bull.jpg";
+	public cow: string = "/assets/vaca.png";
+	public chicken: string = "/assets/chicken1.png";
+	public pork: string = "/assets/pork.png";
+	public horse: string = "/assets/horse.png";
+	public bull: string = "/assets/bull.png";
 
-	public one: string = "/assets/numeros.jpg";
-	public two: string = "/assets/numeros.jpg";
-	public three: string = "/assets/numeros.jpg";
-	public four: string = "/assets/numeros.jpg";
-	public five: string = "/assets/numeros.jpg";
+	public one: string = "/assets/one.png";
+	public two: string = "/assets/two.png";
+	public three: string = "/assets/three.png";
+	public four: string = "/assets/four.png";
+	public five: string = "/assets/five.png";
 
 	public id: string[] = [];
 
